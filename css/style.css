@@ -1,0 +1,455 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*::selection{
+    background-color: red;
+    color: white;
+}
+html, body{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.top-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    z-index: 999;
+    transition: .3s;
+}
+
+.top-nav{
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.top-nav a{
+    transition: .5s;
+}
+
+.top-nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.top-header img{
+    text-align: center;
+    display: block;
+    width: 30px;
+    cursor: pointer;
+}
+
+.cover{
+    background : 
+        no-repeat center center / cover 
+        url('../img/ali-ko.jpg');
+    
+    height: 700px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.cover-title{
+    font-family: cambria, serif;
+    font-size: 90px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+
+.cover-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.btn-cover{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(43, 62, 239);
+    border-radius: 2px;
+    border: none;
+    color: white;
+    text-transform: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: .8;
+    transition: .5s;
+}
+.btn-cover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.about{
+    padding: 20px 0px;
+}
+
+.title{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px ;
+    color: red;
+}
+
+.about-img{
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+.about-img img{
+    width: 300px;
+}
+.about-desc{
+    padding: 25px 10px;
+}
+.about-desc p{
+    text-align: justify;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border-radius: 5px;
+}
+
+.about-desc li::before{
+    content: "✓ ";
+    margin-left: 20px;
+}
+
+.sports{ 
+    padding: 20px 10px;
+    background-color: whitesmoke;
+}
+
+.sport{
+    background-color: white;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    transition: .5s;
+}
+
+.sport:hover{
+    background-color: rgb(10, 10, 44);
+    color: white;
+}
+
+.sport a{
+    color: red;
+    transition: opacity .5s;
+}
+.sport:hover a:hover{
+    opacity: .8;
+}
+.become-member{
+    padding: 100px;
+    text-align: center;
+
+}
+.become-member a:hover{
+    opacity: 1;
+}
+.become-member a{
+    color: white; 
+    opacity: .7;
+    transition: opacity .5s;
+    background-color: red;
+    padding: 20px;
+}
+
+.training{
+    background-color: whitesmoke;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table{
+    background-color: rgb(10, 10, 44);
+    border-collapse: collapse;
+    margin: 1px 2px;
+
+}
+thead th{
+    padding: 10px;
+    background-color: red;
+    text-transform: uppercase;
+}
+th, td{
+    border: solid 1px white;
+
+}
+
+tbody tr{
+    transition: background-color .5s;
+}
+
+tbody tr:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.coachs{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.coachs > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coach{
+    background-color: whitesmoke;
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.coach img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.coach img:hover + div,
+.coach > div:hover{
+    background-color: rgba(255, 0, 0, 0.507);
+    cursor: pointer;
+}
+
+.coach h4{
+    text-transform: uppercase;
+}.coach h5{
+    opacity: .7;
+}
+
+.coach > div{
+    position: absolute;   
+    left: 0px;
+    right: 0px;
+    bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+
+    transition: 1s;
+}
+
+.blogs{
+    padding: 50px 20px;
+}
+
+.blogs{
+    text-align: center;
+}
+
+.blog{
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: initial;
+}
+
+.footer-start{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+.footer-info > div{
+    padding: 20px;
+}
+
+.footer-info h4{
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.footer-info li{
+    transition: 1s;
+}
+.footer-info li:hover{
+    margin-left: 1px;
+    color: red;
+}
+
+
+.newsletter{
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+}
+.newsletter .title{
+    color: white;
+}
+.newsletter > div{
+    background-color: white;
+    display: inline-block;
+    margin-top: 10px;
+    /* padding: 0px; */
+}
+.newsletter input,
+.newsletter button{
+    border: none;
+    padding: 10px;
+}
+
+.newsletter input:focus-visible{
+    outline: none;
+}
+
+.newsletter button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    opacity: .9;
+    transition: opacity .5s;
+}
+
+.newsletter button:hover{
+    opacity: 1;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.footer-end a{
+    font-weight: normal;
+    text-transform: uppercase;
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+.footer-end a:hover{
+    opacity: 1;
+}
+
+@media screen and (min-width : 750px) {
+    .logo{
+        width: 40%;
+    }
+    .top-nav{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-header img{
+
+        display: none;
+    }
+
+    .sports{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sport{
+        margin: 0 10px;
+    }
+
+    .coachs > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .coach{
+        width: 200px;
+    }
+    .coach img{
+        width: 200px;
+    }
+
+    .footer-info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media screen and (min-width : 1000px) {
+    .about{
+        display: flex;
+        padding: 100px 20px;
+    }
+
+    .about-img{
+        width: 40%;
+    }
+    .about-desc{
+        padding: 0;
+        padding-left: 20px;
+        width: 60%;
+    }
+
+    .about-us{
+        padding: 0 30px 30px 30px;
+
+    }
+
+    .why-choose-us{
+        background-color: rgb(10, 10, 44);
+        padding: 30px;
+        color: white;
+        border-radius: 8px;
+    }
+
+    .training{
+        padding: 50px;
+    }
+
+    .coach{
+        width: 300px;
+    }
+    .coach img{
+        width: 300px;
+    }
+
+    .footer-start{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .footer-info{
+        width: 60%;
+    }
+    .newsletter{
+        width: 40%;
+    }
+}
